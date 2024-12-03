@@ -1,0 +1,11 @@
+aside {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        main {
+            margin-left: 20px;
+        }
+        img {
+            border-radius: 10px;
+        }
