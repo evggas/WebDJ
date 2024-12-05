@@ -1,11 +1,61 @@
-aside {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        main {
-            margin-left: 20px;
-        }
-        img {
-            border-radius: 10px;
-        }
+ /* Основной контейнер */
+.main-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+.main-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    font-size: 1.8rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Информационные блоки */
+.info-section p,
+.features-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+/* Список функций */
+.features-list {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #34495e;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+/* Ссылка */
+.contact-link {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #1c5985;
+    text-decoration: underline;
+}
+
+/* Благодарность */
+.thank-you {
+    font-size: 1.2rem;
+    color: #27ae60;
+    text-align: center;
+    margin-top: 30px;
+}
