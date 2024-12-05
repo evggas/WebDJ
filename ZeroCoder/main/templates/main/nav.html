@@ -1,4 +1,17 @@
-<Ul>
-    <li><a href="">Главная страница</a></Li>
-    <li><a href="">Вторая страница</a></Li>
+{% load static %}
+<img src="{% static 'main/img/1.jpg' %}" alt="Новогодний олененок" class="img-fluid rounded mb-3">
+<h4>Навигация</h4>
+<ul class="list-group">
+    <li class="list-group-item">
+        <a href="/">Главная страница</a>
+    </li>
+    <li class="list-group-item">
+        <a href="/new">Вторая страница</a>
+    </li>
+    <li class="list-group-item">
+        <a href="/third">Третья страница</a>
+    </li>
+    <li class="list-group-item">
+        <a href="/fourth">Четвёртая страница</a>
+    </li>
 </ul>
