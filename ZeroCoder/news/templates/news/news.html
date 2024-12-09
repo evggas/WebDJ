@@ -1,0 +1,20 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Новости</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Новости</h1>
+
+    {% for new in news %}
+        <div class="news-item">
+            <h3>{{ new.title }}</h3>
+            <p><strong>Краткое описание:</strong> {{ new.short_description }}</p>
+            <p>{{ new.text }}</p>
+            <p><strong>Автор:</strong> {{ new.user }}</p>
+            <p><small><strong>Дата публикации:</strong> {{ new.pub_date }}</small></p>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}

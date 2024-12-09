@@ -6,3 +6,9 @@ def index(request):
 
 def new(request):
     return render(request, 'main/new.html')
+
+def third(request):
+    return render(request, 'main/third.html')
+
+def fourth(request):
+    return render(request, 'main/fourth.html')
