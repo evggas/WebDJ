@@ -7,14 +7,14 @@ def home(request):
     return render(request, 'news/news.html', {'news': news})
 
 def create_news(request):
-    error = None
+    error = None  # Инициализируем переменную перед проверкой метода
     if request.method == 'POST':
         form = News_postForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('home')  # Перенаправление на главную страницу
         else:
-            error = form.errors.as_text()  # Показывает ошибки валидации
+            error = "Данные были заполнены некорректно."
 
     form = News_postForm()
     return render(request, 'news/add_news_post.html', {'form': form, 'error': error})
