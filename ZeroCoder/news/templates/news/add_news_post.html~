@@ -1,0 +1,24 @@
+<<!-- news/add_news_post.html -->
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Создание новости</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Добавить новость</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="title">Заголовок новости:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="description">Описание:</label>
+            <textarea id="description" name="description"></textarea>
+            <input type="date"> <br>
+		    <input type="time"> <br>
+            <button type="submit">Добавить новость</button>
+        </div>
+    </form>
+{% endblock %}
